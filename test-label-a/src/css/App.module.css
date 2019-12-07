@@ -1,0 +1,51 @@
+.header {
+    text-align: center;
+    position: relative;
+    padding: 1.5em;
+    background-image: url('../img/headerBg.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header img {
+    margin-top: 10px;
+    height: 80px;
+}
+
+.App {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 20px 20px 20px;
+}
+
+.nav {
+    border-bottom: 1px solid black;
+}
+
+.nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*
+    Removing margin from first li so it doesn't look messed up.
+ */
+.nav ul li:first-child {
+    margin-left: 0;
+}

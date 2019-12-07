@@ -1,0 +1,14 @@
+/* Global styles that are used throughout multiple components */
+@font-face {
+    font-family: Jedi;
+    src: url('../fonts/starjedi-webfont.woff')
+}
+
+body {
+    letter-spacing: 1px;
+}
+
+h1, h2 {
+    font-family: Jedi, sans-serif;
+    text-align: center;
+}

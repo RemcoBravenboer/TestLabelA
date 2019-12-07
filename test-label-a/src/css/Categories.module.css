@@ -1,0 +1,37 @@
+.column {
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid black;
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    line-height: 60px;
+    font-family: Jedi, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Phone layout for responsiveness */
+@media (min-width: 320px) and (max-width: 480px) {
+    .column {
+        width: 46%;
+        font-size:16px;
+    }
+}
+
+.column:hover {
+    cursor: pointer;
+}
+
+.alignCenter {
+    text-align: center;
+}
