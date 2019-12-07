@@ -88,7 +88,7 @@ class Table extends Component {
         this.setState({searchResult: []});
 
         Object.values(obj).map((val) => {
-            if(JSON.stringify(val).includes(label)) {
+            if(JSON.stringify(val).toLowerCase().includes(label.toLowerCase())) {
                 this.state.searchResult.push(val)
             }
         });
@@ -114,8 +114,8 @@ class Table extends Component {
     /* Comparator used for the sorting method */
     compare = (a, b) => {
         const selectedIndex = this.state.cellIndex;
-        const valA = Object.values(a)[selectedIndex];
-        const valB = Object.values(b)[selectedIndex];
+        const valA = Object.values(a)[selectedIndex].toLowerCase();
+        const valB = Object.values(b)[selectedIndex].toLowerCase();
 
         let comparison = 0;
         if (valA > valB) {
